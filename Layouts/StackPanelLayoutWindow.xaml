@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfDemoApp.Layouts.StackPanelLayoutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDemoApp.Layouts"
+        mc:Ignorable="d"
+        Title="StackPanelLayoutWindow" Height="450" Width="800">
+    <StackPanel>
+        <Button>One</Button>
+        <Button>Two</Button>
+        <Button>Three</Button>
+        <Border BorderBrush="LimeGreen" BorderThickness="3">
+        <StackPanel Orientation="Horizontal">
+        <Button>Four</Button>
+                <Border BorderBrush="Blue" BorderThickness="3">
+        <Button Margin="5,10,20,30">Five</Button>
+                </Border>
+                <Button>Six</Button>
+        </StackPanel>
+        </Border>
+    </StackPanel>
+</Window>
